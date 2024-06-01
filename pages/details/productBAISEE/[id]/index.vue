@@ -1,6 +1,7 @@
 <template>
     <div>
-        <ProductDetail4 />
+        <CardDetailBaisee />
+        <SubBaisee />
     </div>
 </template>
 

@@ -1,6 +1,7 @@
 <template>
     <div>
-        <ProductDetail1 />
+        <CardDetailPML />
+        <SubPML />
     </div>
 </template>
 

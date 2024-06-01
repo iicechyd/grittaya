@@ -10,7 +10,11 @@
         :loop="true"
         :effect="'creative'"
         :navigation="true"
-        :pagination="true"
+        :pagination="{
+            clickable: true,
+            bulletClass: 'swiper-pagination-bullet',
+            bulletActiveClass: 'swiper-pagination-bullet-active',
+        }"
         :autoplay="{
             delay: 3500,
             disableOnInteraction: false,
@@ -37,11 +41,11 @@
 
 <script setup lang="ts">
 const items = [
-    '/images/slides/slide1.png',
-    '/images/slides/slide2.png',
     '/images/slides/cover1.png',
     '/images/slides/cover2.png',
     '/images/slides/cover3.png',
+    '/images/slides/cover4.png',
+    '/images/slides/cover5.png',
 ]
 </script>
 
@@ -76,13 +80,15 @@ const items = [
 
 ::v-deep .swiper-button-next,
 ::v-deep .swiper-button-prev {
-    @apply text-[#0f4722];
+    @apply text-[white];
 }
 
-@media (max-width: 768px) {
-    ::v-deep .swiper-button-next,
-    ::v-deep .swiper-button-prev {
-        @apply text-white;
-    }
+::v-deep .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 1;
+}
+
+::v-deep .swiper-pagination-bullet-active {
+    background-color: green;
 }
 </style>

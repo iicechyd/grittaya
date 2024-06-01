@@ -1,5 +1,5 @@
 <template>
-    <ContentDetail />
+    <CardDetailContent />
     <p class="Content text-center text-[#0f4722] text-3xl font-bold">
         บทความเพิ่มเติม
     </p>
@@ -13,7 +13,7 @@
             <line x1="0" y1="10" x2="100%" y2="10" />
         </svg>
     </div>
-    <CardContent />
+    <SubContent />
 </template>
 
 <script setup lang="ts"></script>
